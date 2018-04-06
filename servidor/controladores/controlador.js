@@ -56,7 +56,7 @@ function crearSqlBuscarDatosDeCompetencia(idCompetencia, actor_id, director_id, 
             " FROM competencia, actor"+
             " WHERE competencia.actor_id = actor.id AND"+
             " competencia.id = "+idCompetencia;
-    }
+    } 
   }else if (existeElDirector(director_id)) {
     if (existeElGenero(genero_id)) {
       return "SELECT competencia.nombre, director.nombre AS director_nombre, genero.nombre AS genero_nombre"+
